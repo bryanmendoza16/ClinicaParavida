@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ClinicaParavida.Models.Cita>
+
+@{
+    ViewBag.Title = "Programar cita-Pacientes";
+}
+
+<h2>Programar cita-Pacientes</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PacienteDUI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PacienteDUI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Doctor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.CitasID }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id=item.CitasID }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.CitasID })
+        </td>
+    </tr>
+}
+
+</table>
