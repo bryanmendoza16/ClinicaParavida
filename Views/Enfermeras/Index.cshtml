@@ -6,6 +6,7 @@
 
 <h2>Programar cita-Enfermera</h2>
 
+<img src="~/image/PARAVIDA_Logo.png" width="715" height="350"     />
 <p>
     @Html.ActionLink("Agregar", "Create")
 </p>
@@ -35,35 +36,36 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nombres)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Apellidos)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Dui)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Doctor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Hora)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fecha)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.CodigoEnfermera }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.CodigoEnfermera }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.CodigoEnfermera })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dui)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.CodigoEnfermera }) |
+                @Html.ActionLink("Detalles", "Details", new { id = item.CodigoEnfermera }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.CodigoEnfermera })
+            </td>
+        </tr>
+    }
 
 </table>

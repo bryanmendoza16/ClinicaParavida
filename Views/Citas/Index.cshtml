@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ClinicaParavida.Models.Cita>
-
+<img src="~/image/PARAVIDA_Logo.png" width="715" height="350" />
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Programar Citas-Paciente";
 }
 
-<h2>Index</h2>
+<h2>Programar Citas-Paciente</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Agregar", "Create")
 </p>
 <table class="table">
     <tr>
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.Fecha)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CitasID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CitasID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CitasID })
+            @Html.ActionLink("Editar", "Edit", new { id=item.CitasID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.CitasID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.CitasID })
         </td>
     </tr>
 }
