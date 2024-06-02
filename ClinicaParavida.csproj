@@ -183,16 +183,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Citas\Create.cshtml" />
-    <Content Include="Views\Citas\Delete.cshtml" />
-    <Content Include="Views\Citas\Details.cshtml" />
-    <Content Include="Views\Citas\Edit.cshtml" />
-    <Content Include="Views\Citas\Index.cshtml" />
     <Content Include="Views\Enfermeras\Create.cshtml" />
     <Content Include="Views\Enfermeras\Delete.cshtml" />
     <Content Include="Views\Enfermeras\Details.cshtml" />
     <Content Include="Views\Enfermeras\Edit.cshtml" />
     <Content Include="Views\Enfermeras\Index.cshtml" />
+    <Content Include="Views\Citas\Create.cshtml" />
+    <Content Include="Views\Citas\Delete.cshtml" />
+    <Content Include="Views\Citas\Details.cshtml" />
+    <Content Include="Views\Citas\Edit.cshtml" />
+    <Content Include="Views\Citas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

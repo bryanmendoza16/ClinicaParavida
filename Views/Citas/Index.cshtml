@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ClinicaParavida.Models.Cita>
 
 @{
-    ViewBag.Title = "Programar cita-Pacientes";
+    ViewBag.Title = "Index";
 }
 
-<h2>Programar cita-Pacientes</h2>
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Crear Nuevo", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.Fecha)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Editar", new { id=item.CitasID }) |
-            @Html.ActionLink("Detalles", "Detalles", new { id=item.CitasID }) |
-            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.CitasID })
+            @Html.ActionLink("Edit", "Edit", new { id=item.CitasID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CitasID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CitasID })
         </td>
     </tr>
 }

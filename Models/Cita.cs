@@ -26,12 +26,14 @@ namespace ClinicaParavida.Models
         [Required(ErrorMessage = "El doctor es obligatorio")]
        
         public string Doctor { get; set;}
-        [Required(ErrorMessage = "La hora es obligatoria")]
-        
-        public string Hora {  get; set;}
-        [Required(ErrorMessage = "La fecha es obligatoria")]
-        
-        public string Fecha { get; set;}
+        [Display(Name = "Hora de la Cita")]
+        [Required(ErrorMessage = "La Hora de la Cita es obligatoria")]
+        [DataType(DataType.Time, ErrorMessage = "El formato de la Hora de la Cita no es válido")]
+        public DateTime Hora { get; set; }
+        [Display(Name = "Fecha de la Cita")]
+        [Required(ErrorMessage = "La Fecha de la Cita es obligatoria")]
+        [DataType(DataType.Date, ErrorMessage = "El formato de la Fecha de la Cita no es válido")]
+        public DateTime Fecha { get; set; }
 
     }
 }
