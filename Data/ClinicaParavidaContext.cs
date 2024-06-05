@@ -22,5 +22,7 @@ namespace ClinicaParavida.Data
         public System.Data.Entity.DbSet<ClinicaParavida.Models.Cita> Citas { get; set; }
 
         public System.Data.Entity.DbSet<ClinicaParavida.Models.Enfermera> Enfermeras { get; set; }
+
+        public System.Data.Entity.DbSet<ClinicaParavida.Models.Usuario> Usuarios { get; set; }
     }
 }
