@@ -8,7 +8,7 @@
 
 <img src="~/image/PARAVIDA_Logo.png" width="715" height="350"     />
 <p>
-    @Html.ActionLink("Agregar", "Create")
+    @Html.ActionLink("Agregar", "Create", null ,new { @class = "btn btn-outline-primary" })
 </p>
 <table class="table">
     <tr>
@@ -61,9 +61,9 @@
                 @Html.DisplayFor(modelItem => item.Estado)
             </td>
             <td>
-                @Html.ActionLink("Editar", "Edit", new { id = item.CodigoEnfermera }) |
-                @Html.ActionLink("Detalles", "Details", new { id = item.CodigoEnfermera }) |
-                @Html.ActionLink("Eliminar", "Delete", new { id = item.CodigoEnfermera })
+                @Html.ActionLink("Editar", "Edit", new { id = item.CodigoEnfermera }, new { @class = "btn btn-outline-success", onclick = "return confirm('¿Estás seguro de que quieres Editar este elemento?');" })
+                @Html.ActionLink("Detalles", "Details", new { id = item.CodigoEnfermera }, new { @class = "btn btn-outline-primary", })
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.CodigoEnfermera }, new { @class = "btn btn-outline-danger", onclick = "return confirm('¿Estás seguro de que quieres eliminar este elemento?');" })
             </td>
         </tr>
     }

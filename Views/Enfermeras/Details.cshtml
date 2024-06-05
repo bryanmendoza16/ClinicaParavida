@@ -69,6 +69,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoEnfermera }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.CodigoEnfermera }, new { @class = "btn btn-outline-success", onclick = "return confirm('¿Estás seguro de que quieres Editar este elemento?');" }) |
+    @Html.ActionLink("Regresar al Listado", "Index", null, new { @class = "btn btn-primary" })
 </p>

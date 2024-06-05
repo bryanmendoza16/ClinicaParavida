@@ -1,12 +1,12 @@
 ﻿@model ClinicaParavida.Models.Cita
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "ELIMINAR";
 }
 
-<h2>Delete</h2>
+<h2>Eliminar</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Seguro que lo quieres eliminar?</h3>
 <div>
     <h4>Cita</h4>
     <hr />
@@ -64,9 +64,9 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
+<div class="form-actions no-color">
+    <input type="submit" value="Eliminar" class="btn btn-outline-danger"/> |
+    @Html.ActionLink("Regresar al Listado", "Index", null, new { @class = "btn btn-primary" })
+</div>
     }
 </div>
